@@ -1,13 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 131 – Fundamentos da Web Dinâmica - Everson Domingues</title>
+    <meta name="description" content= "WDD 131 – Fundamentos da Web Dinâmica" >
+    <meta name="author" content="Everson Domingues">
+
+    <script src="scripts/obterdatas.js" defer></script>
+
+    <link rel="stylesheet" href="estilos/base.css">
 </head>
 <body>
-    <h1>Everson Rafael Domingues</h1>
+    <header>
+        <h1>WDD131 – Fundamentos da Web Dinâmica</h1>
+        <nav>
+            <a href="https://br.linkedin.com/in/eversonrafael">Linkedin</a>
+            <a href="https://byupw.instructure.com/">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures?lang=por">Escrituras</a>
+            <a href="#">Projeto Final</a>
+        </nav>
 
-    <p>Software Developer!</p>
+    </header>
+    <main>
+        <h1>Everson Domingues</h1>
+
+        <div class="main-content">
+        <section class="card">
+            <h2>Sobre mim</h2>
+            <div class="card-box">
+            <p> Meu nome é Everson Domingues, nasci no Brasil e moro com minha familia na cidade de Curitiba. Atualmente eu trabalho como desenvolvedor em uma grande empresa multinacional. Sou bispo a 4 anos aqui na minha ala, e minha familia é tudo pra mim.</p>
+            <img src="imagens/perfil.jpg" alt="Foto de perfil" width="150">
+            </div>
+            <hr>
+            <div class="main-content-cidade">
+                <h3> Curitiba, Brasil</h3>
+                <div class="card-box">
+                <img src="imagens/curitiba.jpg" alt="Foto de perfil" width="150">
+                <p>Curitiba é a capital do estado do Paraná, localizada na Região Sul do Brasil, com uma população estimada em quase 2 milhões de habitantes.</p>
+                </div>  
+            </div>
+        </section>
+        <section class="card">
+            <h2>Recursos Web Dev</h2>  
+            <ul>
+            <li><a href="https://dev.to" target="_blank">Comunidade Dev.to</a></li>
+            <li><a href="https://www.smashingmagazine.com" target="_blank">Revista Smashing</a></li>
+            <li><a href="https://css-tricks.com" target="_blank">CSS Tricks</a></li>
+            <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a></li>
+            <li><a href="https://www.udemy.com" target="_blank">Udemy</a></li>
+            </ul>      
+        </section>
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy; <span id="anoatual"></span> ☑️ Everson Rafael Domingues ☑️ Curitiba, Brasil </p>
+        <p id="ultimaModificacao"></p>
+    </footer>
+    
 </body>
 </html>
