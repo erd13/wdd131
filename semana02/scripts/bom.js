@@ -1,9 +1,25 @@
 const input = document.querySelector('#capfav');
-const botao = document.querySelector('button');
-const lista = document.querySelector('_____');
-const li = document.querySelector('li');
-const botaoExcluir = document.querySelector('button');
-li.textContent = input.value;
-botaoExcluir.textContent = 'X';
-li.append(botaoExcluir);
-lista.append(li);
+const button = document.querySelector('button');
+const list = document.querySelector('#list');
+
+button.addEventListener('click', function() {
+  if (input.value.trim() !== '') {
+    const li = document.createElement('li');
+    const deleteButton = document.createElement('button');
+
+    li.textContent = input.value;
+    deleteButton.textContent = '❌';
+
+    deleteButton.addEventListener('click', function() {
+      list.removeChild(li);
+      input.focus();
+    });
+
+    li.append(deleteButton);
+    list.append(li);
+
+    input.value = '';
+  }
+
+  input.focus();
+});
