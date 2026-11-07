@@ -1,5 +1,5 @@
 body {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -9,21 +9,15 @@ header, main, footer {
   margin: 1rem auto;
   border: 1px solid lightgray;
   padding: 1rem;
-  background-color: rgb(238, 238, 239);
-}
-
-header {
-  background-color: black;
-  color: #fff;
-  text-align: center;
+  background-color: rgb(243, 243, 243);
 }
 
 .header-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
+ 
 }
-
 
 #btn-menu {
   background: none;
@@ -31,9 +25,7 @@ header {
   font-size: 2rem;
   cursor: pointer;
   padding: 0.2rem 0.5rem;
-  color: #fff;
 }
-
 
 nav {
   display: none;
@@ -48,7 +40,7 @@ nav.open {
 
 nav a {
   text-decoration: none;
-  color: #ffffff;
+  color: #000000; 
   padding: 0.75rem 1rem;
   background-color: transparent;
   text-align: center;
@@ -56,8 +48,9 @@ nav a {
   border-radius: 6px;
 }
 
+
 nav a:hover {
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(13, 12, 12, 0.15);
   color: #ffffff;
 }
 
@@ -70,29 +63,31 @@ main {
 main h1 {
   grid-column: 1 / -1;
   text-align: center;
-  margin-bottom: 0.5rem;
 }
 
-section {
+
+figure {
+  margin: 0;
   padding: 1rem;
   background-color: #fff;
-  border-radius: 12px;
   border: 1px solid #ddd;
+  border-radius: 15px;
   text-align: center;
-  
 }
 
-section img {
+figure img {
   width: 100%;
   height: auto;
-  border: #ddd solid;
-  border-radius: 15px;
-  
+  border-radius: 10px;
+}
+
+figcaption {
+  font-weight: bold;
+  margin-top: 0.5rem;
 }
 
 footer {
   padding: 1rem;
-  background-color: #0f0f0f;
-  color: #ffffff;
+  background-color: #fff;
   text-align: center;
 }

@@ -1,22 +1,21 @@
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 500px) {
   header, main, footer {
     max-width: 1000px;
   }
 
   header {
-    background-color: #131313;
+    background-color: #000;
     color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
   }
 
-   #btn-menu {
+  #btn-menu {
     display: none;
   }
 
-   nav {
+  nav {
     display: flex !important;
     flex-direction: row;
     gap: 1rem;
@@ -27,20 +26,13 @@
     background-color: transparent;
     color: #fff;
     border: none;
-    font-weight: 500;
   }
 
   nav a:hover {
     text-decoration: underline;
   }
 
-   main {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-    main h1 {
-    grid-column: 1 / -1;
-    text-align: center;
-    margin-bottom: 0.5rem;
+  main {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
