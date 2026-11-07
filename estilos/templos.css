@@ -88,6 +88,7 @@ figcaption {
 
 footer {
   padding: 1rem;
-  background-color: #fff;
+  color: #fff;
+  background-color: #0c0b0b;
   text-align: center;
 }

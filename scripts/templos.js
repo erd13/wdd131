@@ -4,21 +4,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
   btnMenu.addEventListener('click', () => {
     menu.classList.toggle('open');
-    
     if (menu.classList.contains('open')) {
       btnMenu.textContent = '✕';
     } else {
       btnMenu.textContent = '☰';
     }
   });
+
+  
+  const yearSpan = document.getElementById('currentyear');
+  if (yearSpan) {
+    yearSpan.textContent = new Date().getFullYear();
+  }
+
+  const lastModifiedP = document.getElementById('lastModified');
+  if (lastModifiedP) {
+    lastModifiedP.textContent = `Última modificação: ${document.lastModified}`;
+  }
 });
-
-const anoAtualSpan = document.getElementById("anoatual");
-if (anoAtualSpan) {
-    anoAtualSpan.textContent = new Date().getFullYear();
-}
-
-const ultimaModificacaoP = document.getElementById("ultimaModificacao");
-if (ultimaModificacaoP) {
-    ultimaModificacaoP.textContent = `Última Modificação: ${document.lastModified}`;
-}
