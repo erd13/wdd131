@@ -34,7 +34,7 @@ nav {
   margin-top: 1rem;
 }
 
-nav.open {
+nav.aberto {
   display: flex;
 }
 

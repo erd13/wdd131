@@ -1,24 +1,24 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const btnMenu = document.getElementById('btn-menu');
+  const botaoMenu = document.getElementById('btn-menu');
   const menu = document.getElementById('menu');
 
-  btnMenu.addEventListener('click', () => {
-    menu.classList.toggle('open');
-    if (menu.classList.contains('open')) {
-      btnMenu.textContent = '✕';
+  botaoMenu.addEventListener('click', () => {
+    menu.classList.toggle('aberto'); 
+    if (menu.classList.contains('aberto')) {
+      botaoMenu.textContent = '✕';
     } else {
-      btnMenu.textContent = '☰';
+      botaoMenu.textContent = '☰';
     }
   });
 
   
-  const yearSpan = document.getElementById('currentyear');
-  if (yearSpan) {
-    yearSpan.textContent = new Date().getFullYear();
+  const elementoAnoAtual = document.getElementById('ano-atual');
+  if (elementoAnoAtual) {
+    elementoAnoAtual.textContent = new Date().getFullYear();
   }
 
-  const lastModifiedP = document.getElementById('lastModified');
-  if (lastModifiedP) {
-    lastModifiedP.textContent = `Última modificação: ${document.lastModified}`;
+  const elementoUltimaModificacao = document.getElementById('ultima-modificacao');
+  if (elementoUltimaModificacao) {
+    elementoUltimaModificacao.textContent = `Última modificação: ${document.lastModified}`;
   }
 });
