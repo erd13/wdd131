@@ -12,7 +12,7 @@ header, main, footer {
   border-radius: 8px;
 }
 
-/* Header Preto */
+
 header {
   background-color: #000000;
   color: #ffffff;
@@ -39,7 +39,7 @@ header h1 {
   color: #ffffff;
 }
 
-/* Menu no celular */
+
 nav {
   display: none;
   flex-direction: column;
@@ -66,7 +66,6 @@ nav a:hover {
   color: #ffffff;
 }
 
-/* Conteúdo Principal */
 main {
   display: grid;
   grid-template-columns: 1fr;
